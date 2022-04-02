@@ -6,7 +6,7 @@ The focus of the first part of this assignment is to test some classification al
 
 ### Steps
 * In the first step we will use the TfIdf representation of the reviews. For the evaluation we will apply the [KFold](https://scikit-learn.org/stable/modules/cross_validation.html) method to get 5 train-test subsets. For each fold we will create a different TfIdf of the train set and one for the test set, since the representation is related to the subsets. Afterwards we will test the classifiers on the test subset. In addition for the Logistic regression we will extract the 20 features with the worst and best weights in the last fold.
-* In the second step we will repeat the first step but this we will use Google's word embeddings to extract the features. The representation of the reviews will be the average of the embeddings of the words.
+* In the second step we will repeat the first step but this time we will use Google's word embeddings to extract the features. The representation of the reviews will be the average of the embeddings of the words.
 * We will evaluate our models using exclusively the mean <b>Confusion Matrix</b> across all 5 folds for each classifier and then calculate the Mean Precision, Recall, F1 scores per class as well as the overall accuracies.
 
 <p align="center"><img src='https://github.com/billgewrgoulas/Classification-and-Link-Prediction/blob/main/B04223_10_02.jpg'></p>
