@@ -9,6 +9,7 @@ The focus of the first part of this assignment is to apply and compare some clas
 * In the second step we will repeat the first step but this we will use Google's word embeddings to extract the features. The representation of the reviews will be the average of the embeddings of the words.
 * We will evaluate our models using exclusively the mean <b>Confusion Matrix</b> across all 5 folds for each classifier and then calculate the Mean Precision, Recall, F1 scores per class as well as the overall accuracies.
 
+<p align="center"><img src='https://github.com/billgewrgoulas/Classification-and-Link-Prediction/blob/main/B04223_10_02.jpg'></p>
 
 ## Part 2 - Link Prediction
 
