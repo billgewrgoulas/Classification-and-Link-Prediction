@@ -2,7 +2,7 @@
 
 ## Part 1 - Classification
 
-The focus of the first part of this assignment is to apply and compare some classification algorithms using the [Yelp](https://www.yelp.com/dataset) academic dataset. We will use the classifiers: <b>K Nearest Neighbors, Support Vector Machine, Logistic Regression</b>. From the data we will keep only the reviews for the businesses located in Boston and were made in 2020. Our goal will be to train the classifiers such that for a random review to predict if it's negative or positive. A review with 4 or 5 stars can be assumed to be positive.
+The focus of the first part of this assignment is to test some classification algorithms using the [Yelp](https://www.yelp.com/dataset) academic dataset. We will use the classifiers: <b>K Nearest Neighbors, Support Vector Machine, Logistic Regression</b>. From the data we will keep only the reviews for the businesses located in Boston and were made in 2020. Our goal will be to train the classifiers such that for a random review to predict if it's negative or positive. A review with 4 or 5 stars can be assumed to be positive.
 
 ### Steps
 * In the first step we will use the TfIdf representation of the reviews. For the evaluation we will apply the [KFold](https://scikit-learn.org/stable/modules/cross_validation.html) method to get 5 train-test subsets. For each fold we will create a different TfIdf of the train set and one for the test set, since the representation is related to the subsets. Afterwards we will test the classifiers on the test subset. In addition for the Logistic regression we will extract the 20 features with the worst and best weights in the last fold.
